@@ -1,21 +1,13 @@
 import React, { Component } from "react";
 
-import { getDatabase } from '../database/database'
+import { save, get, remove } from '../database/database'
 
 // App component - represents the whole app
-
-const saltRounds = 10;
-
 export default class App extends Component {
   constructor(props) {
     super(props);
 
-    this.db = getDatabase();
-
-    this.state = {
-      firstName: "",
-      lastName: ""
-    };
+    this.state = this.initialState()
   }
 
   render() {
@@ -40,8 +32,16 @@ export default class App extends Component {
             onChange={this.onLastNameChanged}/>
         </label>
         <button type="submit">Save</button>
+        <button onClick={this.onReset}>Reset</button>
       </form>
     );
+  }
+
+  initialState() {
+    return ({
+      firstName: get('firstName') || "",
+      lastName: get('lastName') || ""
+    })
   }
 
   onFirstNameChanged = (event) => {
@@ -52,12 +52,12 @@ export default class App extends Component {
     this.setState({ lastName: event.target.value });
   }
 
-  onSubmit = async (event) => {
+  onSubmit = (event) => {
     event.preventDefault();
 
+    // add your hood here to save to database
+    // the below is just for testing - safe to delete
     const {firstName, lastName } = this.state
-
-    this.db.setItem('firstName', firstName);
-    this.db.setItem('lastName', lastName);
+    console.log(`Hello, ${firstName} ${lastName}`);
   }
 }
