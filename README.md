@@ -17,3 +17,12 @@
 1.  Who has the ability to modify data?
 2.  Why can't we rely on the built-in security model of the database?
 3.  Why isn't HTTPS sufficient?
+
+## Possible database options
+
+- Index DB
+- MongoDB
+- PostgreSQL
+- mySQL
+- Knex.js
+- MariaDB
