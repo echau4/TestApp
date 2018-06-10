@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 
+import { getDatabase } from '../database/database'
+
 // App component - represents the whole app
+
+const saltRounds = 10;
 
 export default class App extends Component {
   constructor(props) {
     super(props);
+
+    this.db = getDatabase();
 
     this.state = {
       firstName: "",
@@ -46,10 +52,12 @@ export default class App extends Component {
     this.setState({ lastName: event.target.value });
   }
 
-  onSubmit = (event) => {
+  onSubmit = async (event) => {
     event.preventDefault();
 
     const {firstName, lastName } = this.state
-    console.log(`Hello, ${firstName} ${lastName}`);
+
+    this.db.setItem('firstName', firstName);
+    this.db.setItem('lastName', lastName);
   }
 }
