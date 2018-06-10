@@ -26,3 +26,9 @@
 - mySQL
 - Knex.js
 - MariaDB
+
+## To-Do Tasks
+
+- set up HTTPS to transmit data to server 
+- Figure out database to use
+- Make save and get function to save and get data from data storage place
