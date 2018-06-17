@@ -18,7 +18,7 @@ export default class App extends Component {
           <input
             key="first-name"
             type="text"
-            placeholder="Elizabeth"
+            placeholder="First Name"
             value={this.state.firstName}
             onChange={this.onFirstNameChanged}/>
         </label>
@@ -27,7 +27,7 @@ export default class App extends Component {
           <input
             key="last-name"
             type="text"
-            placeholder="Chau"
+            placeholder="Last Name"
             value={this.state.lastName}
             onChange={this.onLastNameChanged}/>
         </label>
