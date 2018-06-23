@@ -41,7 +41,7 @@ export default class App extends Component {
     return ({
       firstName: get('firstName') || "",
       lastName: get('lastName') || ""
-    })
+    });
   }
 
   onFirstNameChanged = (event) => {
@@ -50,6 +50,13 @@ export default class App extends Component {
 
   onLastNameChanged = (event) => {
     this.setState({ lastName: event.target.value });
+  }
+
+  onReset = (event) => {
+    this.setState({ 
+      firstName: '', 
+      lastName: '' 
+    });
   }
 
   onSubmit = (event) => {
