@@ -19,12 +19,12 @@
 
 ## To-Do Tasks
 
-- set up HTTPS to transmit data to server 
-- Figure out database to use
-- Make save and get function to save and get data from data storage place
-- Rough draft of prospectus
+- Rough draft of prospectus 
 - Set up a time to meet with thesis advisors to review draft and progress 
-- Regular update to annotated bibliography  
+- Regular update to annotated bibliography 
+- Fix the input data that is sent to the database 
+- Understand the data connection process for mobile apps 
+- Create a timeline of when each part of the thesis should be completed 
 
 ## Prospectus [In Progress]
 
