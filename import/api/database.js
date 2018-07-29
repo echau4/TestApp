@@ -1,16 +1,13 @@
-// const localStorage = window.localStorage;
-
 import { Mongo } from 'meteor/mongo'; 
+
 export const Names = new Mongo.Collection('names');
 
 export function save(data, onSave) {
-  // localStorage.setItem(id, data);
   Names.insert(data, onSave);
 }
 
 export function get(id) {
-  // localStorage.getItem(id);
-  Names.find(id);
+  return Names.find(id);
 }
 
 export function update(id, data) {
@@ -18,6 +15,5 @@ export function update(id, data) {
 }
 
 export function remove(id) {
-  // localStorage.removeItem(id);
   Names.remove(id);
 }
