@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 
-import { save, get, remove } from '../database/database'
-
+import { save, get, remove, Names } from '../import/api/database';
+export const id = 1;
 // App component - represents the whole app
 export default class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = this.initialState()
+    this.state = this.initialState();
   }
 
   render() {
@@ -16,7 +16,7 @@ export default class App extends Component {
         <label>
           First name
           <input
-            key="first-name"
+            id="first-name"
             type="text"
             placeholder="First Name"
             value={this.state.firstName}
@@ -39,8 +39,8 @@ export default class App extends Component {
 
   initialState() {
     return ({
-      firstName: get('firstName') || "",
-      lastName: get('lastName') || ""
+      firstName: "",
+      lastName: ""
     });
   }
 
@@ -52,7 +52,7 @@ export default class App extends Component {
     this.setState({ lastName: event.target.value });
   }
 
-  onReset = (event) => {
+  onReset = () => {
     this.setState({ 
       firstName: '', 
       lastName: '' 
@@ -64,7 +64,14 @@ export default class App extends Component {
 
     // add your hood here to save to database
     // the below is just for testing - safe to delete
-    const {firstName, lastName } = this.state
-    console.log(`Hello, ${firstName} ${lastName}`);
+    const {firstName, lastName } = this.state;
+    save({ firstName, lastName }, this.onSaved);
   }
+
+
+  onSaved = () => {
+    this.onReset()
+    alert("item saved")
+  }
+    
 }

@@ -3,9 +3,9 @@
 import { Mongo } from 'meteor/mongo'; 
 export const Names = new Mongo.Collection('names');
 
-export function save(data) {
+export function save(data, onSave) {
   // localStorage.setItem(id, data);
-  Names.insert(data);
+  Names.insert(data, onSave);
 }
 
 export function get(id) {
