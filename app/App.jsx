@@ -78,30 +78,32 @@ export default class App extends Component {
   };
 
   renderList() {
-    const people = get().map(x => {
-      return {
-        firstName: x.firstName,
-        lastName: x.lastName
-      };
-    });
+    const people = get({
+      firstName: 'Roscoe'
+    })
 
-    return (
-      <table>
-        <thead>
-          <th>First Name</th>
-          <th>Last Name</th>
-        </thead>
-        <tbody>
-          {people.map(p => {
-            return (
-              <tr>
-                <td>p.firstName</td>
-                <td>p.lastName</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    );
+  
+    console.log(people)
+
+    // return (
+    //   <table>
+    //     <thead>
+    //     <tr>
+    //       <th>First Name</th>
+    //       <th>Last Name</th>
+    //     </tr>
+    //     </thead>
+    //     <tbody>
+    //       {people.map(p => {
+    //         return (
+    //           <tr>
+    //             <td>p.firstName</td>
+    //             <td>p.lastName</td>
+    //           </tr>
+    //         );
+    //       })}
+    //     </tbody>
+    //   </table>
+    // );
   }
 }
