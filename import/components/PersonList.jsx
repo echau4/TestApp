@@ -1,18 +1,20 @@
-import React, { Component } from "react";
+import React, { Component } from 'react'
 
-export default class PersonList extends Component {
-  constructor(props) {
-    super(props);
+export class PersonList extends Component {
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
     const { people } = this.props
 
     return (
       <table>
         <thead>
-          <th>First Name</th>
-          <th>Last Name</th>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
         </thead>
         <tbody>
           {people.map(p => {
@@ -21,10 +23,10 @@ export default class PersonList extends Component {
                 <td>p.firstName</td>
                 <td>p.lastName</td>
               </tr>
-            );
+            )
           })}
         </tbody>
       </table>
-    );
+    )
   }
 }

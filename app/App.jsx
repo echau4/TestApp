@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import {PersonList, AddPerson } from '../import/components/AddPerson'
+import { get } from '../import/api/database'
+import { AddPerson } from '../import/components/AddPerson';
+import { PersonList } from '../import/components/PersonList';
 
 
 
@@ -33,6 +35,7 @@ export default class App extends Component {
       };
     })
 
+    console.log(people)
     this.setState({ people })
   }
 }

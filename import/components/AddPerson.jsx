@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { saveToDb } from "../import/api/database";
+import { save as saveToDb } from "../api/database";
 
 const initialState = {
   firstName: "",
@@ -7,11 +7,11 @@ const initialState = {
 };
 
 // App component - represents the whole app
-export default class AddPerson extends Component {
+export class AddPerson extends Component {
   constructor(props) {
     super(props);
 
-    this.state = initialState();
+    this.state = initialState;
   }
 
   render() {
@@ -64,7 +64,7 @@ export default class AddPerson extends Component {
     const { firstName, lastName } = this.state;
     saveToDb({ firstName, lastName }, () => {
       this.reset();
-      this.props.onSaved();
+      this.props.onSave();
     });
   };
 }

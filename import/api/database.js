@@ -6,8 +6,8 @@ export function save(data, onSave) {
   Names.insert(data, onSave);
 }
 
-export function get(id) {
-  return Names.find(id);
+export function get() {
+  return Names.find().fetch();
 }
 
 export function update(id, data) {
