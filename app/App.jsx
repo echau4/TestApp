@@ -28,14 +28,8 @@ export default class App extends Component {
   }
 
   onSaved = () => {
-    const people = get().map(x => {
-      return {
-        firstName: x.firstName,
-        lastName: x.lastName
-      };
-    })
+    const people = get()
 
-    console.log(people)
     this.setState({ people })
   }
 }

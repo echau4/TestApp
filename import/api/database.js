@@ -1,19 +1,23 @@
-import { Mongo } from 'meteor/mongo'; 
+// import { Mongo } from 'meteor/mongo'; 
 
-export const Names = new Mongo.Collection('names');
+// export const Names = new Mongo.Collection('names');
+
+const dataStore = []
 
 export function save(data, onSave) {
-  Names.insert(data, onSave);
+  dataStore.push(data)
+
+  onSave()
 }
 
 export function get() {
-  return Names.find().fetch();
+  return dataStore
 }
 
 export function update(id, data) {
-  Names.update(id, {$set: {firstName: data}});
+
 }
 
 export function remove(id) {
-  Names.remove(id);
+
 }
