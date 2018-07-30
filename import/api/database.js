@@ -2,10 +2,19 @@
 
 // export const Names = new Mongo.Collection('names');
 
-const dataStore = []
+const dataStore = [
+  {
+    key: 0,
+    firstName: "Elizabeth",
+    lastName: "Chau"
+  }
+]
 
 export function save(data, onSave) {
-  dataStore.push(data)
+  dataStore.push({
+    key: dataStore.length,
+    ...data
+  })
 
   onSave()
 }

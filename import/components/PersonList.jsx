@@ -19,9 +19,9 @@ export class PersonList extends Component {
         <tbody>
           {people.map(p => {
             return (
-              <tr>
-                <td>p.firstName</td>
-                <td>p.lastName</td>
+              <tr key={p.key}>
+                <td>{p.firstName}</td>
+                <td>{p.lastName}</td>
               </tr>
             )
           })}
