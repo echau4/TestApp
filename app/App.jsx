@@ -19,7 +19,8 @@ export default class App extends Component {
           onSave={this.onSaved}
         />
         <PersonList 
-          people={this.state.people}/>
+          people={this.state.people}
+        />
       </div>
     );
   }
