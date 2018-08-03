@@ -10,12 +10,12 @@
 
 - Create a simple web application
 - Use best-practices to store and retrieve data from a remote data source
-- Only authorized individuals should be able to access this data
+- Only authorized individuals should be able to access this data 
+- Use APA citation style 
 
 ## Outstanding questions
 
 1.  Who has the ability to modify data?
-2.  What is the citation format required? 
 
 ## To-Do Tasks
 
@@ -28,9 +28,14 @@
 
 ## Prospectus [In Progress]
 
-This thesis briefly explores and practices the concept of Network Function Virtualization (NFV). The project will consist of a simplistic mobile application that serves as a prototype for testing and experimenting with. The prototype will have a form that users will fill out and their input will be sent to a database. From there, the aim is to centralize endpoints and also separate them from the servers. The endpoints refer to points of connection for all external communication that will talk with the internal network. Following the NFV concept, the prototype will virtualize any addition network applications instead of adding on traditional on premise hardware. This is because physical hardware proves to be difficult to scale as the amount of users increases and is also expensive to maintain. In respect to security, the NFV portion will serve as an add-on protection on the network layer that assist the current practice of securing end-points. Another goal of this project is to keep the app running even if the client was compromised through a ransomware attack, the network function should still work because there is of the separation of endpoints from the server. Some helpful use cases for an app with such capabilities are the abilities to implement access control in the network layer instead of writing code to the server. The flexibility in having a mobile app and also having it accessible through web browsers will make it more convenient for a diverse population of users. 
+This thesis explores and practices the concept of Network Function Virtualization (NFV) where network functions are virtualized on software instead of being on physical hardware. The project will consist of a simplistic mobile application that serves as a prototype for testing and experimenting. It will have a form that users will fill out and their inputs would be sent to a database. From there, the aim is to centralize the network endpoints. The endpoints refer to points of connection for all external communication that will talk with the internal network. Following the NFV concept, the prototype will virtualize any addition network applications instead of adding on traditional physical hardware. This is because physical hardware proves to be difficult to scale as the amount of users increases and is also expensive to maintain. NFV also has a scalability limit, but is inexpensive. In respect to security, the NFV portion will serve as an add-on protection on the network layer that assist the current practice of securing end-points. With the functions virtualized, it will make it easier to centralize control mechanisms while separating these functions from the main source code. Another goal of this project is to keep the app running even if the client was compromised through a ransomware attack, the network function should still work because it is separated virtually from the server. Some helpful use cases for an app with such capabilities are the abilities to implement access control in the network layer instead of writing code to the server. Another is being more accessible and convenient for a diverse population of users to have a mobile app that is also accessible through web browsers.  
 
-Another use case is for the creation of applications built for the community of people to share their personal information such as geolocation, description of their environment, food they frequent – all thing that can affect their health and the app can secure and anonymize this data and analyzes it with other user inputs to report back to them and others to be able to identify what factors are contributing to their allergies or something similar. More use cases include maintaining anonymity while still being able to share personal information with many others within the community or population that can be analyzed and lead to new findings, and being cost effective while being scalable. This project also aims to make it as painless as possible for people to implement the same practices into their current system. 
+For instances, applications that are built for the community of people to share their personal information such as geolocation, description of their environment, food they frequent to analyze their personal health practices versus others around them, the app will need to have the ability to anonymize the data shared and be able to analyze the information with other user inputs and eventually report back highlighting the different factors that seems to be a trend in contributing to certain health issues. The ability of maintaining anonymity while still being able to share personal information with many others within the community or population while also being cost effective and being scalable is the purpose of this thesis. This project also aims to make it as painless as possible for people to implement the same practices into their current system. 
+
+Use cases: 
+https://www.sdxcentral.com/sdn-nfv-use-cases/ https://www.sdxcentral.com/sdn-nfv-use-cases/ 
+Creates a centralized orchestration engine
+Virtualized security makes it easier to centralize control mechanisms and equally distribute enforcement
 
 Research will go into how to build the mobile application form and then we will proceed to the building of the prototype. After creation, more research will go into the known security vulnerabilities and the prototype will be used to test these findings. The form will then be modified to prevent it from the same exploitation again. Eventually, the goal is to have a secure form that can be used for testing and identifying new exploits. This project aims to help others understand the basics of the security best practices and known common vulnerabilities. It will also strive to present some new concerns and present ideas of how to solve them.
 
