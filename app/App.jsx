@@ -62,8 +62,6 @@ export default class App extends Component {
   onSubmit = (event) => {
     event.preventDefault();
 
-    // add your hood here to save to database
-    // the below is just for testing - safe to delete
     const {firstName, lastName } = this.state;
     save({ firstName, lastName }, this.onSaved);
   }
