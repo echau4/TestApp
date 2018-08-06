@@ -53,15 +53,15 @@ Creates a centralized orchestration engine
 Virtualized security makes it easier to centralize control mechanisms and equally distribute enforcement
 
 ## Timeline of Thesis 
-August 6
-- Prospectus update with advisors for feedback 
-- Prototype code update with advisors for feedback 
-August 10
-- Prospectus update with advisors for feedback 
-August 12
-- Prepare for Final Draft of Prospectus submission 
-August 13
-- Prototype code update with advisors for feedback 
-August 17
-- Final Draft Prospectus Submission Done 
-- Prototype Compeleted 
+- August 6
+  - Prospectus update with advisors for feedback 
+  - Prototype code update with advisors for feedback 
+- August 10
+  - Prospectus update with advisors for feedback 
+- August 12
+  - Prepare for Final Draft of Prospectus submission 
+- August 13
+  - Prototype code update with advisors for feedback 
+- August 17
+  - Final Draft Prospectus Submission Done 
+  - Prototype Compeleted 
