@@ -28,7 +28,7 @@
 
 ## Prospectus [In Progress]
 
-This thesis explores and practices the concept of Network Function Virtualization (NFV) where network functions are virtualized on software instead of being on physical hardware [Doyle]. The project will consist of a simplistic mobile application that serves as a prototype for testing and experimenting. It will have a form that users will fill out and their inputs would be sent to a database. From there, the aim is provide a centralized network endpoint. The endpoint refer to points of connection for all external communication that will talk with the internal network. Following the NFV concept, the prototype will add on virtualized network applications instead of adding on traditional physical hardware [Doyle]. This is because physical hardware proves to be difficult to scale as the amount of users increase and is also expensive to maintain, while the benefits of NFV includes flexible scalability, inexpensive, and easier to deploy [Doyle]. Due to the increasing use of Internet of Things devices and sensors, NFV is becoming a great need to connect them to the network because the architecture for it is much more flexible to new changes in a network [Doyle]. Some of the challenges are the complexity to design and build the architecture for it. The best option is to integrate NFV with an already existing network [Doyle]. In respect to security, the NFV portion is a virtual network built on top of the physical network which makes it easier to control, isolate, and add more security tools and services [Most]. With the functions virtualized, it will make it easier to centralize control mechanisms while separating these functions from the main source code. An advantage of virtualized security is that it makes it easier to incorporate orchestration of the various the network tools used in the environment. 
+This thesis explores and practices the concept of Network Function Virtualization (NFV) where network functions are virtualized on software instead of being on physical hardware [Doyle, Hawilo]. The project will consist of a simplistic mobile application that serves as a prototype for testing and experimenting. It will have a form that users will fill out and their inputs would be sent to a database. From there, the aim is provide a centralized network endpoint and separates it from the hardware appliances while not affecting functionality [Hawilo]. The endpoint refer to points of connection for all external communication that will talk with the internal network. Following the NFV concept, the prototype will add on virtualized network applications instead of adding on traditional physical hardware [Doyle]. This is because physical hardware proves to be difficult to scale as the amount of users increase and is also expensive to maintain, while the benefits of NFV includes flexible scalability, inexpensive, and easier to deploy [Doyle]. Due to the increasing use of Internet of Things devices and sensors, NFV is becoming a great need to connect them to the network because the architecture for it is much more flexible to new changes in a network [Doyle, Hawilo]. Some of the challenges are the complexity to design and build the architecture for it. The best option is to integrate NFV with an already existing network [Doyle]. In respect to security, the NFV portion is a virtual network built on top of the physical network which makes it easier to control, isolate, and add more security tools and services [Most]. With the functions virtualized, it will make it easier to centralize control mechanisms while separating these functions from the main source code. An advantage of virtualized security is that it makes it easier to incorporate orchestration of the various the network tools used in the environment. 
 
 Another goal of this project is to keep the app running even if the client was compromised through a ransomware attack, the network function should still work because it is separated virtually from the server. Some helpful use cases for an app with such capabilities are the abilities to implement access control in the network layer instead of writing code to the server. Another is being more accessible and convenient for a diverse population of users to have a mobile app that is also accessible through web browsers.
 
@@ -40,7 +40,9 @@ Research will go into how to build the mobile application form and then we will 
 
 Doyle, Lee. "What Is NFV and What Are Its Cost, Performance and Scaling Benefits?" Network World. February 06, 2018. Accessed August 11, 2018. https://www.networkworld.com/article/3253118/virtualization/what-is-nfv-and-what-are-its-cost-performance-and-scaling-benefits.html.
 
-"Most Common SDN & NFV Use Cases Defined." SDxCentral. Accessed August 7, 2018. https://www.sdxcentral.com/sdn-nfv-use-cases/.
+Hawilo, Hassan, Abdallah Shami, Maysam Mirahmadi, and Rasool Asal. "NFV: State of the Art, Challenges, and Implementation in next Generation Mobile Networks (vEPC)." IEEE Network 28, no. 6 (2014): 18-26. doi:10.1109/mnet.2014.6963800.
+
+"Most Common SDN & NFV Use Cases Defined." SDxCentral. Accessed August 7, 2018. https://www.sdxcentral.com/sdn-nfv-use-cases/
 
 ## Annotated Bibliography 
 
@@ -61,15 +63,22 @@ Creates a centralized orchestration engine
 Virtualized security makes it easier to centralize control mechanisms and equally distribute enforcement
 
 ## Timeline of Thesis 
-- August 6
-  - Prospectus update with advisors for feedback 
-  - Prototype code update with advisors for feedback 
-- August 10
-  - Prospectus update with advisors for feedback 
-- August 12
-  - Prepare for Final Draft of Prospectus submission 
-- August 13
-  - Prototype code update with advisors for feedback 
-- August 17
-  - Final Draft Prospectus Submission Done 
-  - Prototype Compeleted 
+- August 6 - August 17
+    - Prospectus update with advisors for feedback
+    - Prototype code update with advisors for feedback
+- August 18 -August 24
+    - Final draft prospectus submission done
+    - Prototype completed 
+ - August 24
+    - Thesis Orientation Session on campus
+- August 24 - October 23
+    - Review and research 
+    - Work on experiment 
+- October 23
+    - Preparing for the Defense and Binding Process Session on campus  
+- October 23 - December 31 
+    - Review and research 
+    - Work on experiment 
+- January 1 - March 31
+    - Write and revise thesis 
+
