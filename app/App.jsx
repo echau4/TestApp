@@ -12,7 +12,7 @@ export default class App extends Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
+      <form>
         <label>
           First name
           <input
@@ -31,7 +31,7 @@ export default class App extends Component {
             value={this.state.lastName}
             onChange={this.onLastNameChanged}/>
         </label>
-        <button type="submit">Save</button>
+        <button onClick={this.onSubmit}>Save</button>
         <button onClick={this.onReset}>Reset</button>
       </form>
     );
