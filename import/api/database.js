@@ -8,9 +8,10 @@ export function save(data, onSave) {
   Names.insert(data, onSave);
 }
 
-export function get(id) {
+export function get(data) {
   // localStorage.getItem(id);
-  Names.find(id);
+  os = Names.find({ data }).fetch();
+  console.log(os);
 }
 
 export function update(id, data) {

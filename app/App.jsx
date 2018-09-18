@@ -33,6 +33,7 @@ export default class App extends Component {
         </label>
         <button onClick={this.onSubmit}>Save</button>
         <button onClick={this.onReset}>Reset</button>
+        <button onClick={this.onFind}>Find</button>
       </form>
     );
   }
@@ -71,5 +72,12 @@ export default class App extends Component {
     this.onReset()
     alert("item saved")
   }
-    
+  
+  onFind = (event) => {
+    event.preventDefault();
+
+    const { firstName, lastName } = this.state;
+    get({ firstName, lastName }, this.onReset);
+  }
+
 }
