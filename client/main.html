@@ -4,5 +4,30 @@
 
 <body>
   <h1>Form</h1>
+  {{> form}}
+  <p>{{> loginButtons}}</p>
   <div id="render-target"></div>
+  {{#if currentUser}}
+    <ul>
+      <!-- {{#each person}}
+        <li class="person {{selectedClass}}">{{firstName}} {{lastName}}</li>
+      {{/each}} -->
+      <!-- {{#if selectedPerson}}
+        <li>Selected Name: {{selectedPerson.firstName}} {{selectedPerson.lastName}}</li>
+        <li>  
+          <button class="remove">Remove Name</button>
+        </li>
+      {{/if}} -->
+    </ul>
+  {{else}}
+    <p>Log in to see more content</p>
+  {{/if}}
 </body>
+
+<template name="form">
+  <ul>
+    {{#each people}}
+      <li>{{firstName}} {{lastName}}</li>
+    {{/each}}
+  </ul>
+</template>
