@@ -1,4 +1,4 @@
-# Thesis project
+# Thesis project (Moved to new repository)
 
 ## Goals
 
